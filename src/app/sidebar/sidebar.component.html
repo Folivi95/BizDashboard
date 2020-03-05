@@ -1,1 +1,11 @@
-<p>sidebar works!</p>
+<ul class="nav nav-pills flex-column">
+    <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/sales']" routerLinkActive="active">Sales Volume</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/orders']" routerLinkActive="active">Latest Orders</a> 
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/health']" routerLinkActive="active">System Health</a> 
+    </li>
+</ul>
