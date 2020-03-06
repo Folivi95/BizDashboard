@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Order } from 'src/app/shared/order';
 
 @Component({
   selector: 'app-section-orders',
@@ -6,6 +7,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section-orders.component.css']
 })
 export class SectionOrdersComponent implements OnInit {
+
+  orders: Order[] = [
+    {id: 1, customer:
+      {id: 1, name: 'Main St Bakery', state: 'C0', email: 'mainst@example.com'},
+      total: 230, placed: new Date(2017, 12, 1), fulfilled: new Date(2017, 12, 2)},
+    {id: 1, customer:
+      {id: 1, name: 'Main St Bakery', state: 'C0', email: 'mainst@example.com'},
+      total: 230, placed: new Date(2017, 12, 1), fulfilled: new Date(2017, 12, 2)},
+    {id: 1, customer:
+      {id: 1, name: 'Main St Bakery', state: 'C0', email: 'mainst@example.com'},
+      total: 230, placed: new Date(2017, 12, 1), fulfilled: new Date(2017, 12, 2)},
+    {id: 1, customer:
+      {id: 1, name: 'Main St Bakery', state: 'C0', email: 'mainst@example.com'},
+      total: 230, placed: new Date(2017, 12, 1), fulfilled: new Date(2017, 12, 2)},
+    {id: 1, customer:
+      {id: 1, name: 'Main St Bakery', state: 'C0', email: 'mainst@example.com'},
+      total: 230, placed: new Date(2017, 12, 1), fulfilled: new Date(2017, 12, 2)}
+  ];
 
   constructor() { }
 

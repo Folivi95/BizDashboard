@@ -12,6 +12,7 @@ import { SectionHealthComponent } from './sections/section-health/section-health
 import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
 import { LineChartComponent } from './charts/line-chart/line-chart.component';
 import { BarChartComponent } from './charts/bar-chart/bar-chart.component';
+import { ServerComponent } from './server/server.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BarChartComponent } from './charts/bar-chart/bar-chart.component';
     SectionHealthComponent,
     PieChartComponent,
     LineChartComponent,
-    BarChartComponent
+    BarChartComponent,
+    ServerComponent
   ],
   imports: [
     BrowserModule,
