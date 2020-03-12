@@ -33,7 +33,6 @@ export class PieChartComponent implements OnInit {
 
   parseChartData(res: any, limit?: number) {
     const allData = res.slice(0, limit);
-    console.log('response: ', allData);
     this.pieChartData = allData.map(x => _.values(x)[1]);
     this.pieChartLabels = allData.map(x => _.values(x)[0]);
   }

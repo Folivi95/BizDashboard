@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { CustomerOrder } from '../shared/customer-order';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +14,8 @@ export class SalesDataService {
     return this.http.get('https://localhost:44347/api/order/' + pageIndex + '/' + pageSize);
   }
 
-  getOrdersByCustomer(n: number) {
-    return this.http.get('https://localhost:44347/api/order/bycustomer/' + n);
+  getOrdersByCustomer(n: number): Observable<CustomerOrder[]> {
+    return this.http.get<CustomerOrder[]>('https://localhost:44347/api/order/bycustomer/' + n);
   }
 
   getOrdersByState() {
