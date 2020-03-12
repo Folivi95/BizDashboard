@@ -44,8 +44,9 @@ export class BarChartComponent implements OnInit {
   }
 
   getChartData(res: any) {
-    this.orders = res['page']['data'];
-    const data = this.orders.map(o => o.total);
+    const page = 'page';
+    const data = 'data';
+    this.orders = res.page.data;
 
     const formattedOrders = this.orders.reduce((r, e) => {
       r.push([moment(e.placed).format('YY-MM-DD'), e.total]);
